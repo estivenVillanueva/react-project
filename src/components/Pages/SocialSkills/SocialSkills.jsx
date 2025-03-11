@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Experience = () => {
+export const SocialSkills = () => {
   return (
     <div>
-      <h2>I'm Experienca</h2>
+      <h2>social Skills</h2>
     </div>
   )
-}
+} 
