@@ -7,7 +7,7 @@ import { Footer } from './components/Layouts/Footer/Footer'
 import { Home } from './components/Pages/Home/Home'
 import { Experience } from './components/Pages/Experience/Experience'
 import { Studies } from './components/Pages/Studies/Studies'
-import { Profile } from './components/Pages/Profile/Profile'
+import { TechnicalSkills } from './components/Pages/technicalSkills/technicalSkills'
 import { NotFound } from './components/Pages/NotFound/NotFound'
 
 export const App = () => {
@@ -17,7 +17,7 @@ export const App = () => {
       <Container>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/Technical-skills' element={<TechnicalSkills />}/>
           <Route path='/experience' element={<Experience />} />
           <Route path='/studies' element={<Studies />} />
           <Route path='*' element={<NotFound />} />
