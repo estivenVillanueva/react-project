@@ -26,9 +26,11 @@ export const Home = () => {
                 <p>Especializado en desarrollo Frontend con enfoque en:</p>
                 <ul>
                   <li>React.js</li>
-                  <li>HTML5 & CSS3</li>
-                  <li>JavaScript Moderno</li>
+                  <li>HTML & CSS</li>
+                  <li>JavaScript </li>
                   <li>Diseño Responsivo</li>
+                  <li>Githud</li>
+                  <li>Control de verciones vercel</li>
                 </ul>
               </div>
 
@@ -37,16 +39,14 @@ export const Home = () => {
                 <p>Busco oportunidades para:</p>
                 <ul>
                   <li>Crear interfaces innovadoras</li>
+                  <li>Desarrollar mas la creatividad</li>
                   <li>Aprender nuevas tecnologías</li>
-                  <li>Colaborar en proyectos desafiantes</li>
+                  <li>Colaborar en proyectos </li>
                 </ul>
               </div>
             </div>
 
-            <div className="contact-info">
-              <h3>Contacto</h3>
-              <p>📧 estivenvillanueva71@gmail.com</p>
-            </div>
+           
           </div>
         </div>
       </div>

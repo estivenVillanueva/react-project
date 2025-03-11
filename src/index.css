@@ -121,8 +121,8 @@ button:focus-visible {
 }
 
 .container {
-  margin-top: 80px; /* Ajusta este valor según la altura de tu header */
-  margin-bottom: 100px; /* Ajusta este valor según la altura de tu footer */
+  margin-top: 80px; /* Ajustar el valor según la altura del header */
+  margin-bottom: 100px; /* Ajustar el  valor según la altura del footer */
 }
 
 .main-footer {

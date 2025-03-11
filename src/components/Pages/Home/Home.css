@@ -1,21 +1,29 @@
+:root {
+  --header-height: 20px; /* ajusta según la altura real de tu header */
+  --footer-height: 20px; /* ajusta según la altura real de tu footer */
+}
+
 .home-container {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  margin: 0;
   animation: fadeIn 0.8s ease-in;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-section {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
   padding: 2rem;
+  width: 100%;
+  border-radius: 0;
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .profile-content {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 2rem;
+  margin: 0;
 }
 
 .profile-content h1 {
@@ -33,15 +41,18 @@
 }
 
 .description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
+  width: 190%;
+  display: block;
 }
 
 .highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 4rem;
   margin: 2rem 0;
+  width: 100%;
 }
 
 .highlight-item {
@@ -104,7 +115,16 @@
 
 @media (max-width: 768px) {
   .home-container {
+    padding: 1rem 0;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  }
+
+  .profile-section {
     padding: 1rem;
+  }
+
+  .profile-content {
+    padding: 0 1rem;
   }
 
   .profile-content h1 {
