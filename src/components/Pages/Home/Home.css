@@ -1,6 +1,6 @@
 :root {
-  --header-height: 20px; /* ajusta según la altura real de tu header */
-  --footer-height: 20px; /* ajusta según la altura real de tu footer */
+  --header-height: 20px; 
+  --footer-height: 20px; 
 }
 
 .home-container {
@@ -49,16 +49,18 @@
 
 .highlights {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 4rem;
-  margin: 2rem 0;
-  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .highlight-item {
   background: rgba(255, 255, 255, 0.03);
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 0.8rem;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
@@ -68,7 +70,8 @@
 
 .highlight-item h3 {
   color: #646cff;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .highlight-item ul {
@@ -77,9 +80,10 @@
 }
 
 .highlight-item ul li {
-  margin: 0.5rem 0;
-  padding-left: 1.2rem;
+  margin: 0.3rem 0;
+  padding-left: 1rem;
   position: relative;
+  font-size: 0.9rem;
 }
 
 .highlight-item ul li::before {
