@@ -15,53 +15,57 @@
 
 .profile-section {
   padding: 2rem;
-  width: 100%;
-  border-radius: 0;
+  width: 80%;
+  border-radius: 12px;
   backdrop-filter: blur(10px);
+  margin: 0 auto;
 }
 
 .profile-content {
   max-width: 100%;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   margin: 0;
 }
 
 .profile-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
   background: linear-gradient(45deg, #646cff, #535bf2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .profile-content h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  width: 190%;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 70%;
   display: block;
 }
 
 .highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 1rem;
   margin: 1rem 0;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 30%;
 }
 
 .highlight-item {
   background: rgba(255, 255, 255, 0.03);
-  padding: 0.8rem;
+  padding: 1rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
+  flex: 0 0 300px;
 }
 
 .highlight-item:hover {
@@ -70,7 +74,7 @@
 
 .highlight-item h3 {
   color: #646cff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-size: 1.1rem;
 }
 
@@ -80,7 +84,7 @@
 }
 
 .highlight-item ul li {
-  margin: 0.3rem 0;
+  margin: 0.4rem 0;
   padding-left: 1rem;
   position: relative;
   font-size: 0.9rem;
@@ -140,6 +144,11 @@
   }
 
   .highlights {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding-left: 5%;
+  }
+
+  .highlight-item {
+    width: 100%;
   }
 } 

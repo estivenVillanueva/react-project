@@ -43,6 +43,20 @@ export const Studies = () => {
             <span className="status completed">Completados</span>
           </div>
         </div>
+
+        <div className="education-item">
+          <h2>Idiomas</h2>
+          <div className="study-card">
+            <h3>Inglés</h3>
+            <p>Nivel A2 - Básico</p>
+            <ul>
+              <li>Comprensión de textos básicos</li>
+              <li>Comunicación en situaciones cotidianas</li>
+              <li>Vocabulario fundamental</li>
+            </ul>
+            <span className="status completed">Certificado</span>
+          </div>
+        </div>
       </div>
     </div>
   )

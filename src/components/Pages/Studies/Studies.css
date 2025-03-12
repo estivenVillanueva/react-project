@@ -22,7 +22,7 @@
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
-  padding-left: 23%;
+  padding-left: 7%;
   padding-right: 2rem;
   gap: 2rem;
   overflow-x: auto;
@@ -159,7 +159,7 @@
   }
 
   .education-grid {
-    padding-left: 7%;
+    padding-left: 5%;
     gap: 1rem;
   }
 
