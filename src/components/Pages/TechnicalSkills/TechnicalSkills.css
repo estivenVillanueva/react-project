@@ -147,31 +147,43 @@
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 820px) and (min-height: 1180px) {
   .skills-grid {
     flex-direction: column;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 90%;
+    padding: 0;
     margin: 0 auto;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .skill-category {
     flex: none;
-    width: 100%;
+    width: 90%;
+    max-width: 450px;
     margin-bottom: 1rem;
+    min-height: 250px;
   }
 
   .skills-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
     text-align: center;
   }
 
   .skill-card {
-    padding: 1rem;
+    padding: 1.2rem;
+    height: auto;
   }
 
   .skill-category h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+
+  .skill-card ul li {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
   }
 }
