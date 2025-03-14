@@ -1,13 +1,25 @@
 import React from 'react'
 import './Home.css'
+import profilePhoto from './profile-photo.jpg'
 
 export const Home = () => {
   return (
     <div className="home-container">
       <div className="profile-section">
         <div className="profile-content">
-          <h1>Estiven Villanueva Moscoso</h1>
-          <h2>Frontend Developer</h2>
+          <div className="profile-header">
+            <div className="profile-image-container">
+              <img 
+                src={profilePhoto} 
+                alt="Estiven Villanueva" 
+                className="profile-image"
+              />
+            </div>
+            <div className="profile-info">
+              <h1>Estiven Villanueva Moscoso</h1>
+              <h2>Frontend Developer</h2>
+            </div>
+          </div>
           
           <div className="description">
             <p>¡Hola! Soy un desarrollador frontend de 18 años apasionado por crear experiencias web excepcionales.</p>

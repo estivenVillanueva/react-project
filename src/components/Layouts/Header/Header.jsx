@@ -10,7 +10,6 @@ export const Header = () => {
           <li><NavLink to="/experience" className={({isActive}) => isActive ? 'active' : ''}>Experience</NavLink></li>
           <li><NavLink to="/technical-skills">Technical Skills</NavLink></li>
           <li><NavLink to="SocialSkills">SocialSkills</NavLink></li>
-          <li><NavLink to="*">Links Rotos</NavLink></li>
         </ul>
       </nav>
     </header>
