@@ -456,4 +456,95 @@
   .education-section + .education-section {
     margin-top: 1.5rem;
   }
+}
+
+/* Modo oscuro (por defecto) */
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+/* Estilos base para enlaces en modo oscuro */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* Media query para modo claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  .studies-title {
+    color: #646cff;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+  }
+
+  .study-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .study-card h3 {
+    color: #213547;
+  }
+
+  .study-card p,
+  .study-card ul li {
+    color: #4a4a4a;
+  }
+
+  .education-item {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .education-item h2 {
+    color: #646cff;
+    border-bottom-color: rgba(100, 108, 255, 0.3);
+  }
+
+  /* Ajustes para el estado de los cursos */
+  .status.completed {
+    background: rgba(76, 175, 80, 0.1);
+    color: #2e7d32;
+  }
+
+  .status.in-progress {
+    background: rgba(255, 193, 7, 0.1);
+    color: #f57c00;
+  }
+
+  /* Ajuste para el hover de las tarjetas */
+  .study-card:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(100, 108, 255, 0.3);
+  }
+}
+
+/* Media query para modo oscuro explícito */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+
+  .study-card h3 {
+    color: #ffffff;
+  }
+
+  .study-card p,
+  .study-card ul li {
+    color: rgba(255, 255, 255, 0.7);
+  }
 } 

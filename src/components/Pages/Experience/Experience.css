@@ -352,3 +352,73 @@
       padding-bottom: 0.5rem;
     }
   }
+
+  /* Media query para modo claro */
+  @media (prefers-color-scheme: light) {
+    .experience-title {
+      color: #646cff;
+      background: none;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+    }
+
+    .experience-item {
+      background: rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .experience-item h2 {
+      color: #646cff;
+      border-bottom-color: rgba(100, 108, 255, 0.3);
+    }
+
+    .job-card {
+      background: rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .job-card h3 {
+      color: #213547;
+    }
+
+    .job-period {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .job-responsibilities li {
+      color: #4a4a4a;
+    }
+
+    .job-responsibilities li::before {
+      color: #646cff;
+    }
+
+    .job-card:hover {
+      background: rgba(0, 0, 0, 0.08);
+      border-color: rgba(100, 108, 255, 0.3);
+    }
+  }
+
+  /* Media query para modo oscuro explícito */
+  @media (prefers-color-scheme: dark) {
+    .job-card h3 {
+      color: #ffffff;
+    }
+
+    .job-period {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .job-responsibilities li {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .experience-item {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .job-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
