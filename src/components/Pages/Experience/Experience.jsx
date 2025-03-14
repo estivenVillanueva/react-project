@@ -15,7 +15,7 @@ export const Experience = () => {
             <ul className="job-responsibilities">
               <li>Asesoramiento técnico a estudiantes en proyectos de desarrollo de software</li>
               <li>Orientación en metodologías de desarrollo y buenas prácticas</li>
-              <li>Apoyo en la resolución de problemas y debugging</li>
+              <li>Apoyo en la resolución de problemas</li>
               <li>Guía en la implementación de soluciones técnicas</li>
             </ul>
           </div>
@@ -28,7 +28,6 @@ export const Experience = () => {
             <ul className="job-responsibilities">
               <li>Gestión y organización de documentación</li>
               <li>Coordinación de actividades administrativas</li>
-              <li>Manejo de información y bases de datos</li>
               <li>Atención y servicio al cliente</li>
             </ul>
           </div>

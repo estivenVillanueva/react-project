@@ -4,9 +4,9 @@
 }
 
 .home-container {
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 100%;
-  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  min-height: calc(100vh - 105px);
   margin: 0;
   animation: fadeIn 0.8s ease-in;
   display: flex;
@@ -14,8 +14,8 @@
 }
 
 .profile-section {
-  padding: 2rem;
-  width: 80%;
+  padding: 1rem;
+  width: 90%;
   border-radius: 12px;
   backdrop-filter: blur(10px);
   margin: 0 auto;
@@ -30,16 +30,16 @@
 .profile-header {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
   padding-left: 1%;
   
 }
 
 .profile-image-container {
   flex-shrink: 0;
-  width: 160px;
-  height: 220px;
+  width: 120px;
+  height: 160px;
   border-radius: 15px;
   overflow: hidden;
   border: 2px solid #646cff;
@@ -67,10 +67,11 @@
 .profile-info {
   flex-grow: 1;
   padding-left: 1rem;
+  max-width: calc(100% - 110px);
 }
 
 .profile-info h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-bottom: 0.8rem;
   background: linear-gradient(45deg, #646cff, #535bf2);
   -webkit-text-fill-color: transparent;
@@ -78,7 +79,7 @@
 }
 
 .profile-info h2 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -91,22 +92,27 @@
 
 .highlights {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-left: 0;
+  padding-right: 0.5rem;
+  width: 100%;
   margin: 1rem 0;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30%;
+  overflow-x: hidden;
 }
 
 .highlight-item {
+  flex: none;
+  width: 92%;
+  padding: 0.7rem;
+  min-height: auto;
+  max-height: none;
+  margin-bottom: 0.5rem;
   background: rgba(255, 255, 255, 0.03);
-  padding: 1rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
-  flex: 0 0 300px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .highlight-item:hover {
@@ -115,8 +121,10 @@
 
 .highlight-item h3 {
   color: #646cff;
-  margin-bottom: 0.8rem;
-  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  white-space: normal;
+  text-align: left;
 }
 
 .highlight-item ul {
@@ -125,10 +133,14 @@
 }
 
 .highlight-item ul li {
-  margin: 0.4rem 0;
+  margin: 0.25rem 0;
   padding-left: 1rem;
   position: relative;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
 }
 
 .highlight-item ul li::before {
@@ -173,6 +185,415 @@
   }
 }
 
+@media screen and (min-width: 398px) and (max-width: 852px) {
+  :root {
+    --header-height: 20px; 
+    --footer-height: 20px; 
+  }
+  
+  .home-container {
+    padding: 1rem 0;
+    width: 100%;
+    min-height: calc(100vh - 105px);
+    margin: 0;
+    animation: fadeIn 0.8s ease-in;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-section {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+  }
+  
+  .profile-content {
+    max-width: 100%;
+    padding: 0 1.5rem;
+    margin: 0;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1%;
+    
+  }
+  
+  .profile-image-container {
+    flex-shrink: 0;
+    width: 90px;
+    height: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #646cff;
+    box-shadow: 0 0 20px rgba(100, 108, 255, 0.2);
+    animation: profileFadeIn 1s ease-out;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    margin-left: 1rem;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    filter: contrast(1.1) brightness(1.05);
+  }
+  
+  .profile-image-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(100, 108, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .profile-info {
+    flex-grow: 1;
+    padding-left: 1rem;
+    max-width: calc(100% - 110px);
+  }
+  
+  .profile-info h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(45deg, #646cff, #535bf2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .profile-info h2 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    width: 90%;
+    line-height: 1.4;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-left: 0;
+    padding-right: 0.5rem;
+    width: 100%;
+    margin: 1rem 0;
+    overflow-x: hidden;
+  }
+  
+  .highlight-item {
+    flex: none;
+    width: 90%;
+    padding: 0.7rem;
+    min-height: auto;
+    max-height: none;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .highlight-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .highlight-item h3 {
+    color: #646cff;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    white-space: normal;
+    text-align: left;
+  }
+  
+  .highlight-item ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .highlight-item ul li {
+    margin: 0.25rem 0;
+    padding-left: 1rem;
+    position: relative;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: left;
+  }
+  
+  .highlight-item ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #646cff;
+  }
+  
+  .highlight-item::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .highlight-item::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .highlight-item::-webkit-scrollbar-thumb {
+    background: rgba(100, 108, 255, 0.3);
+    border-radius: 2px;
+  }
+  
+  .contact-info {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background: rgba(100, 108, 255, 0.08);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .contact-info h3 {
+    color: #646cff;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes profileFadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1559px) {
+  :root {
+    --header-height: 20px; 
+    --footer-height: 20px; 
+  }
+  
+  .home-container {
+    padding: 1rem 0;
+    width: 100%;
+    min-height: calc(100vh - 105px);
+    margin: 0;
+    animation: fadeIn 0.8s ease-in;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-section {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+  }
+  
+  .profile-content {
+    max-width: 100%;
+    padding: 0 1.5rem;
+    margin: 0;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1%;
+    
+  }
+  
+  .profile-image-container {
+    flex-shrink: 0;
+    width: 90px;
+    height: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #646cff;
+    box-shadow: 0 0 20px rgba(100, 108, 255, 0.2);
+    animation: profileFadeIn 1s ease-out;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    margin-left: 1rem;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    filter: contrast(1.1) brightness(1.05);
+  }
+  
+  .profile-image-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(100, 108, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .profile-info {
+    flex-grow: 1;
+    padding-left: 1rem;
+    max-width: calc(100% - 110px);
+  }
+  
+  .profile-info h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(45deg, #646cff, #535bf2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .profile-info h2 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    width: 100%;
+    line-height: 1.4;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-left: 0;
+    padding-right: 0.5rem;
+    width: 100%;
+    margin: 1rem 0;
+    overflow-x: hidden;
+  }
+  
+  .highlight-item {
+    flex: none;
+    width: 92%;
+    padding: 0.7rem;
+    min-height: auto;
+    max-height: none;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .highlight-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .highlight-item h3 {
+    color: #646cff;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    white-space: normal;
+    text-align: left;
+  }
+  
+  .highlight-item ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .highlight-item ul li {
+    margin: 0.25rem 0;
+    padding-left: 1rem;
+    position: relative;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: left;
+  }
+  
+  .highlight-item ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #646cff;
+  }
+  
+  .highlight-item::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .highlight-item::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .highlight-item::-webkit-scrollbar-thumb {
+    background: rgba(100, 108, 255, 0.3);
+    border-radius: 2px;
+  }
+  
+  .contact-info {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background: rgba(100, 108, 255, 0.08);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .contact-info h3 {
+    color: #646cff;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes profileFadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
 @media (max-width: 768px) {
   .home-container {
     padding: 1rem 0;
@@ -212,5 +633,280 @@
 
   .highlight-item {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .profile-section {
+    width: 90%;
+    padding: 0.8rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-image-container {
+    width: 100px;
+    height: 140px;
+  }
+
+  .profile-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-info h2 {
+    font-size: 1rem;
+  }
+
+  .highlights {
+    padding: 0 0.5rem;
+  }
+
+  .highlight-item {
+    flex: 0 0 180px;
+    padding: 0.6rem;
+  }
+}
+
+.highlights::-webkit-scrollbar {
+  height: 4px;
+}
+
+.highlights::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.highlights::-webkit-scrollbar-thumb {
+  background: rgba(100, 108, 255, 0.3);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .home-container {
+    padding: 1.5rem;
+    width: 90%;
+    min-height: calc(100vh - 60px);
+  }
+
+  .profile-section {
+    width: 95%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .profile-image-container {
+    width: 160px;
+    height: 200px;
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  .profile-info {
+    flex: 1;
+    padding: 0;
+    max-width: none;
+  }
+
+  .profile-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .profile-info h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    width: 90%;
+    line-height: 1.6;
+    margin-bottom: 3.5rem;
+  }
+
+  .highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 0 2rem;
+    margin: 3rem 0;
+    overflow: visible;
+  }
+
+  .highlight-item {
+    width: 90%;
+    min-height: 280px;
+    padding: 2rem;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .highlight-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #646cff;
+  }
+
+  .highlight-item ul {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .highlight-item ul li {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .highlight-item ul li::before {
+    font-size: 1rem;
+    top: 1px;
+  }
+
+  .contact-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(100, 108, 255, 0.08);
+    border-radius: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links a {
+    font-size: 1.5rem;
+    color: #646cff;
+  }
+
+  .highlight-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(100, 108, 255, 0.15);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(100, 108, 255, 0.2);
+    border-radius: 3px;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .home-container {
+    padding: 2rem 1rem;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+  }
+
+  .profile-section {
+    width: 95%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .profile-header {
+    margin-bottom: 3rem;
+  }
+
+  .profile-image-container {
+    width: 140px;
+    height: 180px;
+    margin-left: 1rem;
+  }
+
+  .profile-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .profile-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 95%;
+    margin-bottom: 2.5rem;
+  }
+
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+  }
+
+  .highlight-item {
+    width: 95%;
+    padding: 1.8rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+  }
+
+  .highlight-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    color: #646cff;
+  }
+
+  .highlight-item ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .highlight-item ul li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .highlight-item ul li::before {
+    font-size: 1.2rem;
+    top: 2px;
+  }
+
+  .contact-info {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
   }
 } 

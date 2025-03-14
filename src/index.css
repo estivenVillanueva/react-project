@@ -79,9 +79,9 @@ button:focus-visible {
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .nav-list {
@@ -90,16 +90,17 @@ button:focus-visible {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-list li a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 4px;
   transition: all 0.3s ease;
+  font-size: 0.9rem;
 }
 
 .nav-list li a:hover {
@@ -117,6 +118,18 @@ button:focus-visible {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+}
+
+/* Media query específico para iPhone 14 Pro y similares */
+@media screen and (max-width: 398px) {
+  .nav-list {
+    gap: 0.8rem;
+  }
+
+  .nav-list li a {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.85rem;
   }
 }
 

@@ -24,7 +24,7 @@ export const SocialSkills = () => {
           <div className="skill-card">
             <ul>
               <li>Colaboración proactiva</li>
-              <li>Adaptabilidad a diferentes roles</li>
+              <li>Adaptabilidad </li>
               <li>Resolución de conflictos</li>
               <li>Apoyo a compañeros</li>
             </ul>
@@ -50,7 +50,7 @@ export const SocialSkills = () => {
               <li>Gestión del tiempo</li>
               <li>Pensamiento crítico</li>
               <li>Creatividad</li>
-              <li>Aprendizaje continuo</li>
+              
             </ul>
           </div>
         </div>

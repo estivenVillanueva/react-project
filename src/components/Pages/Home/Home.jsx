@@ -22,7 +22,7 @@ export const Home = () => {
           </div>
           
           <div className="description">
-            <p>¡Hola! Soy un desarrollador frontend de 18 años apasionado por crear experiencias web excepcionales.</p>
+            <p>Hola Soy un desarrollador frontend de 18 años apasionado por crear experiencias web excepcionales.</p>
             
             <div className="highlights">
               <div className="highlight-item">
