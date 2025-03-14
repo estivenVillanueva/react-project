@@ -7,7 +7,7 @@ import { Footer } from './components/Layouts/Footer/Footer'
 import { Home } from './components/Pages/Home/Home'
 import { Experience } from './components/Pages/Experience/Experience'
 import { Studies } from './components/Pages/Studies/Studies'
-import { TechnicalSkills } from './components/Pages/technicalSkills/technicalSkills'
+import { TechnicalSkills } from './components/Pages/TechnicalSkills/TechnicalSkills'
 import { NotFound } from './components/Pages/NotFound/NotFound'
 import { SocialSkills } from './components/Pages/SocialSkills/SocialSkills'
 

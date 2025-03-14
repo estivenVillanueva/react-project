@@ -9,7 +9,7 @@ export const TechnicalSkills = () => {
       <div className="skills-grid">
         <div className="skill-category">
           <h2>Frontend</h2>
-          <div className="skill-card">
+         
             <ul>
               <li>React.js</li>
               <li>HTML</li>
@@ -18,12 +18,12 @@ export const TechnicalSkills = () => {
               <li>Responsive Design</li>
              
             </ul>
-          </div>
+         
         </div>
 
         <div className="skill-category">
           <h2>Control de Versiones</h2>
-          <div className="skill-card">
+          
             <ul>
               <li>Git</li>
               <li>GitHub</li>
@@ -31,13 +31,13 @@ export const TechnicalSkills = () => {
               <li>Control de ramas</li>
               <li>Colaboración en equipo</li>
             </ul>
-          </div>
+          
         </div>
 
 
         <div className="skill-category">
           <h2>Habilidades Blandas</h2>
-          <div className="skill-card">
+          
             <ul>
               <li>Liderazgo</li>
               <li>Creatividad</li>
@@ -46,7 +46,7 @@ export const TechnicalSkills = () => {
               <li>Comunicación efectiva</li>
               <li>Adaptabilidad</li>
             </ul>
-          </div>
+          
         </div>
       </div>
     </div>
